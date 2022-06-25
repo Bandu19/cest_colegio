@@ -1,15 +1,9 @@
-import "./App.css";
+import { AppRouter } from "./router/AppRouter";
 
-const App = () => {
+export const App = () => {
    return (
-      <div class="container">
-         <div class="row">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-         </div>
-      </div>
+      <>
+         <AppRouter />
+      </>
    );
 };
-
-export default App;
