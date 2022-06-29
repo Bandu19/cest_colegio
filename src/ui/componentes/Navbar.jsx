@@ -3,7 +3,7 @@ import "../../css/index.css";
 
 export const Navbar = () => {
    return (
-      <div className="container">
+      <div className="container ">
          <nav
             className="
                row text-white 
