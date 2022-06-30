@@ -16,7 +16,7 @@ nav {
 }
 
 .header {
-   background-image: url(../../assets/FOTOGRAFIA\ PRINCIPAL.png);
+   background-image: url(../assets/fotografia_principal.png);
    height: 100vh; /*TIENE QUE VER CON LA IMAGEN*/
    background-repeat: no-repeat;
    background-size: cover;

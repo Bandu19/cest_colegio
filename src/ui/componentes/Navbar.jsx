@@ -1,5 +1,6 @@
 // import { Link, NavLink } from "react-router-dom";
 import "../../css/index.css";
+import imgLogo from "../../assets/cest_superior_izquierdo.png";
 
 export const Navbar = () => {
    return (
@@ -12,11 +13,7 @@ export const Navbar = () => {
          >
             {/* LOGO */}
             <a href="#" className="col-auto">
-               <img
-                  src="../../../assets/CEST superior izquierdo.png"
-                  alt="Logo CEST"
-                  className="img-logo"
-               />
+               <img src={imgLogo} alt="Logo CEST" className="img-logo" />
             </a>
 
             {/* ANCLAS */}

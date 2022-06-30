@@ -1,4 +1,8 @@
 import { Navbar } from "../../ui";
+//IMPORTACION IMAGENES
+import imagen1 from "../../assets/fotografia_principal.png";
+import imagen2 from "../../assets/img2_segunda_oportunidad.png";
+import imgLogoFooter from "../../assets/cest_superior_izquierdo.png";
 
 //--- RAMA HIJO
 export const CestMain = () => {
@@ -13,7 +17,7 @@ export const CestMain = () => {
                <div className="hero__text container_grid">
                   <img
                      className="imagen_estilo  float-end"
-                     src="../../../assets/SIEMPRE HAY UNA SEGUNDA.... FRASE.png"
+                     src={imagen2}
                      alt="Simpre hay una segunda Oportunidad"
                   />
                </div>
@@ -45,21 +49,9 @@ export const CestMain = () => {
 
          <main className="container ">
             <div className=" row">
-               <img
-                  className="imagen_estilo col-lg-4 "
-                  src="../../../assets/FOTOGRAFIA PRINCIPAL.png"
-                  alt=""
-               />
-               <img
-                  className="imagen_estilo col-lg-4   "
-                  src="../../../assets/FOTOGRAFIA PRINCIPAL.png"
-                  alt=""
-               />
-               <img
-                  className="imagen_estilo col-lg-4   "
-                  src="../../../assets/FOTOGRAFIA PRINCIPAL.png"
-                  alt=""
-               />
+               <img className="imagen_estilo col-lg-4 " src={imagen1} alt="maestro_1" />
+               <img className="imagen_estilo col-lg-4 " src={imagen1} alt="maestro_2" />
+               <img className="imagen_estilo col-lg-4 " src={imagen1} alt="maestro_3" />
             </div>
 
             <div className="row">
@@ -71,23 +63,23 @@ export const CestMain = () => {
                   <div className="row mb-4 prueba ">
                      <img
                         className="imagen_estilo col "
-                        src="../../../assets/FOTOGRAFIA PRINCIPAL.png"
-                        alt=""
+                        src={imagen1}
+                        alt="imagen_muestra"
                      />
                      <img
                         className="imagen_estilo col "
-                        src="../../../assets/FOTOGRAFIA PRINCIPAL.png"
-                        alt=""
+                        src={imagen1}
+                        alt="imagen_muestra"
                      />
                      <img
                         className="imagen_estilo col   "
-                        src="../../../assets/FOTOGRAFIA PRINCIPAL.png"
-                        alt=""
+                        src={imagen1}
+                        alt="imagen_muestra"
                      />
                      <img
                         className="imagen_estilo col   "
-                        src="../../../assets/FOTOGRAFIA PRINCIPAL.png"
-                        alt=""
+                        src={imagen1}
+                        alt="imagen_muestra"
                      />
                   </div>
                </div>
@@ -133,7 +125,7 @@ export const CestMain = () => {
                         className="col-3 text-reset text-uppercase d-flex align-items-center"
                      >
                         <img
-                           src="../../../assets/CEST superior izquierdo.png"
+                           src={imgLogoFooter}
                            alt="Logo CEST"
                            className="img-logo-footer"
                         />
