@@ -229,3 +229,20 @@ nav {
    background: #e75f3d;
    color: #fff;
 }
+
+/************MEDIAQUERY********/
+@media (max-width: 768px) {
+   .img-logo {
+      width: 8rem;
+   }
+   .mobile-nav-toggle {
+      color: #fff;
+      display: block;
+      align-items: center;
+      cursor: pointer;
+      font-size: 2em;
+   }
+   nav {
+      padding-top: 10px;
+   }
+}
