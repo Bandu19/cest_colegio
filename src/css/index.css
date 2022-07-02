@@ -148,6 +148,21 @@ nav {
    gap: 10px;
 }
 
+.container_grid_main {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 24px 20px 29px 20px;
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: 1fr;
+   font-family: "Cabin", sans-serif;
+}
+
+.prubea2 svg {
+   display: none;
+}
+
 .color {
    background-color: #023e8a;
    text-align: center;
@@ -276,10 +291,6 @@ nav {
       margin-right: 25px;
    }
 
-   .icono_link #text {
-      margin-left: 15px;
-   }
-
    .icono_link2 {
       width: 100%;
       display: flex;
@@ -297,13 +308,74 @@ nav {
       width: 24rem;
       padding-left: 15px;
    }
+   .container_section_mb {
+      width: 90%;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 0;
+      max-width: 1200px;
+   }
+
+   .relleno {
+      padding: 0;
+      margin: 0;
+   }
+
+   .container_grid_main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: "Cabin", sans-serif;
+   }
+
+   .nav_mod_v1 {
+      height: 100%;
+      box-shadow: 1px 1px 80px 40px #00000010;
+      background: #023e8a;
+   }
+   .prubea2 {
+      display: flex;
+      justify-content: center;
+      padding: 25px;
+      background-color: #ee5d42;
+      border-radius: 10px;
+      transition: all 0.4s ease-in;
+   }
+   .prubea2:hover {
+      background-color: #03071e;
+      transition: all 0.5s ease-in;
+   }
+
+   .prubea2 svg {
+      display: flex;
+      margin-right: 25px;
+
+      /* height: 50%; */
+   }
+   .imagen_estilo {
+      max-width: 100%;
+      height: 100%;
+   }
+   .imagen_estilo2 {
+      height: 100%;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1, auto);
+      justify-items: center;
+   }
+
    /****************************MEDIAQUERY-SECCTION******************************/
 }
 
 @media (max-width: 425px) {
    .img-logo_mb {
-      width: 18rem;
-      padding-left: 15px;
+      width: 13rem;
+      padding-left: 3px;
+   }
+   .fuente_letrra {
+      text-align: center;
+      font-size: 16px;
    }
 }
 

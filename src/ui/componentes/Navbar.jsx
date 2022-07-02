@@ -24,7 +24,7 @@ export const Navbar = () => {
                className="
                row text-white 
                justify-content-between 
-               align-items-center text-uppercase "
+               align-items-center  "
             >
                {/* LOGO */}
                <a href="#" className="col-auto">
