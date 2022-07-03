@@ -1,7 +1,6 @@
-import { Navbar, SectionHeader, SectionHeaderBottom } from "../../ui";
+import { Navbar, SectionHeader, SectionHeaderBottom, Footer } from "../../ui";
 //IMPORTACION IMAGENES
 import imagen1 from "../../assets/fotografia_principal.png";
-import imgLogoFooter from "../../assets/cest_superior_izquierdo.png";
 
 //--- RAMA HIJO
 export const CestMain = () => {
@@ -30,30 +29,30 @@ export const CestMain = () => {
                <img className="imagen_estilo col-lg-4 " src={imagen1} alt="maestro_3" />
             </div>
 
-            {/* <div className="row">
-               <div className="col-12 mt-4 text-lg-center">
+            <div className="row">
+               <div className="col-12 mt-4 text-center text-lg-center">
                   <h2>Requisitos de Inscripcion</h2>
                   <div className="color text-white p-3 mt-4 mb-4">
                      <h2>Inscripción Gratis</h2>
                   </div>
-                  <div className="row mb-4 prueba ">
+                  <div className="row mb-4 imagen_estilo3 prueba ">
                      <img
-                        className="imagen_estilo col "
+                        className="imagen_estilo  col-lg-3 "
                         src={imagen1}
                         alt="imagen_muestra"
                      />
                      <img
-                        className="imagen_estilo col "
+                        className="imagen_estilo col-lg-3 "
                         src={imagen1}
                         alt="imagen_muestra"
                      />
                      <img
-                        className="imagen_estilo col   "
+                        className="imagen_estilo col-lg-3   "
                         src={imagen1}
                         alt="imagen_muestra"
                      />
                      <img
-                        className="imagen_estilo col   "
+                        className="imagen_estilo col-lg-3  "
                         src={imagen1}
                         alt="imagen_muestra"
                      />
@@ -61,8 +60,8 @@ export const CestMain = () => {
                </div>
             </div>
 
-            <div className="row">
-               <div className="col-4 uPpercase">
+            <div className="row imagen_estilo3 centrar-texto ">
+               <div className="col-lg-4 uPpercase">
                   <h2>cest</h2>
                   <p>
                      Somos una institución educativa de Nivel Medio Superior y Superior,
@@ -70,7 +69,7 @@ export const CestMain = () => {
                      fuerza laboral del mañana.
                   </p>
                </div>
-               <div className="col-4 uPpercase">
+               <div className="col-lg-4 uPpercase">
                   <h2>misión</h2>
                   <p>
                      Formar profesionistas a partir de una educación de calidad centrada en
@@ -79,7 +78,7 @@ export const CestMain = () => {
                      de nuestro pais.
                   </p>
                </div>
-               <div className="col-4 uPpercase">
+               <div className="col-lg-4 uPpercase">
                   <h2>visión</h2>
                   <p>
                      Siendo una institución consolidada en Tenango del Valle y con
@@ -88,8 +87,12 @@ export const CestMain = () => {
                      el acceso a una educación digna y de calidad
                   </p>
                </div>
-            </div> */}
+            </div>
          </main>
+
+         <footer className="bg-dark text-white">
+            <Footer />
+         </footer>
       </>
    );
 };

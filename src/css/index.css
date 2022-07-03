@@ -364,6 +364,29 @@ nav {
       grid-template-rows: repeat(1, auto);
       justify-items: center;
    }
+   .imagen_estilo3 {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1, auto);
+      justify-items: center;
+   }
+   .color h2 {
+      font-size: 320%;
+   }
+
+   .centrar-texto {
+      text-align: center;
+   }
+
+   .container_grid_footer_mb {
+      /*MUY IMPORTANTE*/
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: "Cabin", sans-serif;
+      align-items: center;
+   }
 
    /****************************MEDIAQUERY-SECCTION******************************/
 }
