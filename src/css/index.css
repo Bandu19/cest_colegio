@@ -391,6 +391,13 @@ nav {
    /****************************MEDIAQUERY-SECCTION******************************/
 }
 
+@media (max-width: 560px) {
+   .img-logo_mb {
+      width: 19rem;
+      padding-left: 3px;
+   }
+}
+
 @media (max-width: 425px) {
    .img-logo_mb {
       width: 13rem;
@@ -402,13 +409,32 @@ nav {
    }
 
    .color h2 {
-      font-size: 283%;
+      font-size: 240%;
+   }
+   .nav__link {
+      margin-left: 15px;
+   }
+   .prubea2 svg {
+      margin-right: 0;
    }
 }
 
 @media (max-width: 375px) {
    .color h2 {
       font-size: 230%;
+   }
+}
+
+@media (max-width: 360px) {
+   .color h2 {
+      font-size: 190%;
+   }
+
+   .icono_link2 svg {
+      margin-right: 13px;
+   }
+   .prubea2 svg {
+      display: none;
    }
 }
 @media (max-width: 320px) {
@@ -418,6 +444,18 @@ nav {
    .col-12 h2 {
       text-transform: uppercase;
       font-size: 20px;
+   }
+   .icono_link svg {
+      font-size: 3em;
+      margin-right: 1px;
+      margin-right: 0;
+   }
+   .icono_link2 svg {
+      margin-right: 10px;
+   }
+
+   .icono-prueba {
+      font-size: 3em;
    }
 }
 

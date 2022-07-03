@@ -86,7 +86,7 @@ export const Navbar = () => {
                            onClick={() => setShowMobileMenu(!showMobileMenu)}
                         >
                            <div className="icono_link ">
-                              <FaHome />
+                              <FaHome className="icono-prueba" />
                               Iniciar Sesión
                            </div>
                         </a>
