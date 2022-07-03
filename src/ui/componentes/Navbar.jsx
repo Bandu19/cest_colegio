@@ -42,13 +42,13 @@ export const Navbar = () => {
                      <MenuItem>
                         <a
                            className="text-reset nav_items items-cta row fuente_letrra  "
-                           href="/formulario"
+                           href="https://dashboard-colegio-formulario.netlify.app"
                            /* PARA CERRAR LOS ENLACES */
                            onClick={() => setShowMobileMenu(!showMobileMenu)}
                         >
                            <div className="icono_link ">
                               <FaBalanceScale />
-                              ¿Quienes Somos?
+                              Formulario
                            </div>
                         </a>
                      </MenuItem>
