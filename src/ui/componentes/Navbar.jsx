@@ -42,7 +42,7 @@ export const Navbar = () => {
                      <MenuItem>
                         <a
                            className="text-reset nav_items items-cta row fuente_letrra  "
-                           href="../../../formulario.html"
+                           href="/formulario"
                            /* PARA CERRAR LOS ENLACES */
                            onClick={() => setShowMobileMenu(!showMobileMenu)}
                         >
