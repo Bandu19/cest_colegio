@@ -16,10 +16,10 @@ export const CestMain = () => {
             </section>
          </header>
          <Routes>
-            <Route path="marvel" element={<Contenido />} />
+            <Route path="inicio" element={<Contenido />} />
             <Route path="formulario" element={<Formulario />} />
 
-            <Route path="/" element={<Navigate to="/marvel" />} />
+            <Route path="/" element={<Navigate to="/inicio" />} />
          </Routes>
 
          <footer className="bg-dark text-white">

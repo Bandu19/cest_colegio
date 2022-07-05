@@ -17,13 +17,18 @@ nav {
 
 .header {
    background-image: url(../assets/fotografia_principal.png);
-   height: 100vh; /*TIENE QUE VER CON LA IMAGEN*/
+   height: calc(100vh - 80px);
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
    background-position: center; /*PENDIENTE*/
    position: relative;
 }
+/* background: url(fondo.jpg) no-repeat;
+  
+background-size: cover;
+background-position: center center;
+
 
 /* .header::after {
    content: "";
@@ -259,6 +264,11 @@ nav {
 /****************************MEDIAQUERY******************************/
 @media (max-width: 768px) {
    /****************************MEDIAQUERY-NAVBAR******************************/
+
+   .header {
+      background-image: url(/src/assets/fotografia_principal_mobile_2.png);
+      height: calc(110vh - 80px);
+   }
    .img-logo {
       width: 8rem;
    }
@@ -392,6 +402,13 @@ nav {
 }
 
 @media (max-width: 560px) {
+   .header {
+      background: url(../assets/fotografia_principal_mobile_2.png) no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      height: calc(100vh - 80px);
+   }
    .img-logo_mb {
       width: 19rem;
       padding-left: 3px;

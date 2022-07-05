@@ -12,7 +12,7 @@ export const Contenido = () => {
 
          <main className="container ">
             <div className="row imagen_estilo2 ">
-               <img className="imagen_estilo col-lg-4  " src={imagen1} alt="maestro_1" />
+               <img className="imagen_estilo col-lg-4 " src={imagen1} alt="maestro_1" />
                <img className="imagen_estilo col-lg-4 " src={imagen1} alt="maestro_2" />
                <img className="imagen_estilo col-lg-4 " src={imagen1} alt="maestro_3" />
             </div>
