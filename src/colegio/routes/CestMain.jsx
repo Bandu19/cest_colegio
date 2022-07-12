@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router";
+import { Route, Routes } from "react-router-dom";
 import { NotFound404 } from "../../auth";
 import { Navbar, SectionHeader, Footer } from "../../ui";
 import { Contenido, Formulario } from "../pages";
@@ -20,7 +20,6 @@ export const CestMain = () => {
          <Routes>
             <Route exact path="/inicio" element={<Contenido />} />
             <Route exact path="/formulario" element={<Formulario />} />
-            <Route exact path="/" element={<Navigate to="/inicio" />} />
 
             <Route path="*" element={<NotFound404 />} />
          </Routes>
