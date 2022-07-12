@@ -18,7 +18,7 @@ export const CestMain = () => {
          </header>
 
          <Routes>
-            <Route exact path="/inicio" element={<Contenido />} />
+            <Route exact path="/" element={<Contenido />} />
             <Route exact path="/formulario" element={<Formulario />} />
 
             <Route path="*" element={<NotFound404 />} />
