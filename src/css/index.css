@@ -1,3 +1,7 @@
+:root {
+   --padding-container: 100px 0;
+   --color-title: #001a49;
+}
 body {
    margin: 0;
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
@@ -14,16 +18,32 @@ a {
 nav {
    padding: 0;
 }
-
 .header {
-   background-image: url(../assets/fotografia_principal.png);
-   height: calc(100vh - 80px);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
-   background-position: center; /*PENDIENTE*/
+   width: 100%;
+   height: 100vh;
+   /* min-height: 600px;
+   max-height: 800px;*/
    position: relative;
+   display: grid;
+   grid-template-rows: 100px 1fr;
+   color: #fff; /*TENEMOS QUE CAMBIARLO A MODO BUSTRAP*/
 }
+
+.header::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+      url(../assets/fotografia_principal.png);
+   background-size: cover;
+   background-position: center;
+
+   z-index: -1;
+}
+
 /* background: url(fondo.jpg) no-repeat;
   
 background-size: cover;
@@ -63,18 +83,43 @@ background-position: center center;
    background: #023e8a;
 }
 
+.nav_1 {
+   --padding-container: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav__links {
+   color: #fff;
+   text-decoration: none;
+}
+
 .imagen_estilo {
    max-width: 50%;
    height: 100%;
 }
 
+/*QUITAR*/
 .items-cta {
    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
    transition: all 300ms;
 }
 
-.img-logo {
-   width: 11rem;
+.img-logo img {
+   width: 10rem;
+}
+
+/*IMPORTANTE*/
+
+.nav__menu {
+   margin: auto;
+   cursor: pointer;
+   display: none;
+}
+.nav__img {
+   display: block;
+   width: 30px;
 }
 
 /**********************************************************************/
@@ -82,14 +127,15 @@ background-position: center center;
 .header .container_header {
    padding: 0;
 }
-
+/*QUITAR*/
 .nav_items {
    color: #fff;
-   margin-right: 20px;
-   padding: 10px 15px;
+   /* margin-right: 20px; */
+   padding: 7px 4px;
    font-weight: inherit;
 }
 
+/*PENDIENTE*/
 .hero_container {
    display: flex;
    height: calc(100vh - 70px);
@@ -139,7 +185,7 @@ background-position: center center;
    display: none;
    fill: #fff;
 }
-
+/* QUITAR */
 .icono_portada {
    display: none;
 }
@@ -233,6 +279,7 @@ background-position: center center;
    transition: all 0.5s ease-in;
 }
 
+/*QUITAR*/
 .fuente_letrra {
    font-family: "Cabin", sans-serif;
 }
@@ -262,15 +309,24 @@ background-position: center center;
 } */
 
 /****************************MEDIAQUERY******************************/
-@media (max-width: 768px) {
+@media (max-width: 800px) {
    /****************************MEDIAQUERY-NAVBAR******************************/
 
-   .header {
+   /* .header {
       background-image: url(/src/assets/fotografia_principal_mobile_2.png);
       height: calc(110vh - 80px);
-   }
+   } */
    .img-logo {
       width: 8rem;
+   }
+   .nav__menu {
+      display: block;
+      margin-right: 0;
+   }
+
+   .content_width {
+      max-width: 1200px;
+      width: 50%;
    }
    .mobile-nav-toggle {
       color: #fff;
@@ -280,7 +336,7 @@ background-position: center center;
       font-size: 2em;
    }
    nav {
-      padding-top: 10px;
+      padding-top: 0;
    }
    .nav_mod {
       opacity: 1;
@@ -293,24 +349,28 @@ background-position: center center;
    }
    .icono_link {
       width: 100%;
-      display: flex;
-      justify-content: left;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-items: center;
+      text-align: center;
    }
    .icono_link svg {
       display: flex;
-      margin-right: 25px;
    }
 
    .icono_link2 {
-      width: 100%;
-      display: flex;
+      width: 102%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-items: center;
    }
 
    .icono_link2 svg {
-      display: flex;
-      margin-right: 25px;
+      display: block;
    }
-
+   /*quitar*/
    .icono_portada {
       display: flex;
    }
@@ -402,13 +462,13 @@ background-position: center center;
 }
 
 @media (max-width: 560px) {
-   .header {
+   /* .header {
       background: url(../assets/fotografia_principal_mobile_2.png) no-repeat;
       background-size: cover;
       background-position: center center;
       background-attachment: fixed;
       height: calc(100vh - 80px);
-   }
+   } */
    .img-logo_mb {
       width: 19rem;
       padding-left: 3px;
@@ -446,10 +506,10 @@ background-position: center center;
    .color h2 {
       font-size: 190%;
    }
-
+   /* 
    .icono_link2 svg {
       margin-right: 13px;
-   }
+   } */
    .prubea2 svg {
       display: none;
    }
@@ -462,14 +522,14 @@ background-position: center center;
       text-transform: uppercase;
       font-size: 20px;
    }
-   .icono_link svg {
+   /* .icono_link svg {
       font-size: 3em;
       margin-right: 1px;
       margin-right: 0;
-   }
-   .icono_link2 svg {
+   } */
+   /* .icono_link2 svg {
       margin-right: 10px;
-   }
+   } */
 
    .icono-prueba {
       font-size: 3em;

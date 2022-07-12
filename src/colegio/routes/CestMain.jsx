@@ -15,6 +15,7 @@ export const CestMain = () => {
                <SectionHeader />
             </section>
          </header>
+
          <Routes>
             <Route path="inicio" element={<Contenido />} />
             <Route path="formulario" element={<Formulario />} />
