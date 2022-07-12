@@ -45,11 +45,11 @@ export const Navbar = () => {
                      </div>
                   </MenuItem>
                   <MenuItem>
-                     <div className="content_width">
+                     <div className="content_width2">
                         <a href="#" className="nav__links">
                            <div className="icono_link2 nav_items items-cta">
                               <FaUserTie />
-                              ¿Te interesa ?
+                              ¿Te interesa?
                            </div>
                         </a>
                      </div>

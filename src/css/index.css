@@ -328,6 +328,10 @@ background-position: center center;
       max-width: 1200px;
       width: 50%;
    }
+   .content_width2 {
+      max-width: 1200px;
+      width: 54%;
+   }
    .mobile-nav-toggle {
       color: #fff;
       display: block;
@@ -372,7 +376,11 @@ background-position: center center;
    }
    /*quitar*/
    .icono_portada {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
    }
    .img-logo_mb {
       width: 24rem;
