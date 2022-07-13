@@ -36,7 +36,7 @@ export const Navbar = () => {
 
                   <MenuItem>
                      <div className="content_width ">
-                        <a href="#" className="nav__links text-reset ">
+                        <a href="/formulario" className="nav__links text-reset ">
                            <div className="icono_link nav_items items-cta">
                               <FaBalanceScale />
                               Formulario
