@@ -19,7 +19,7 @@ export const CestMain = () => {
 
          <Routes>
             <Route exact path="/" element={<Contenido />} />
-            <Route exact path="/formulario" element={<Formulario />} />
+            <Route exact path="formulario" element={<Formulario />} />
             <Route path="*" element={<NotFound404 />} />
          </Routes>
 
