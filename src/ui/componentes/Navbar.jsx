@@ -15,6 +15,7 @@ import {
    FaTimes,
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
    const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -25,23 +26,27 @@ export const Navbar = () => {
             <nav className="nav_1  ">
                {/* LOGO */}
                <div className="img-logo">
-                  <img src={imgLogo} alt="" />
+                  <img src={imgLogo} alt="Logo CEST" />
                </div>
                {/* ANCLAS */}
 
                <Menu open={showMobileMenu}>
-                  <a href="#" className="icono_portada">
+                  <div className="icono_portada">
                      <img src={imgLogo} alt="Logo CEST" className="img-logo_mb" />
-                  </a>
+                  </div>
 
                   <MenuItem>
                      <div className="content_width ">
-                        <a href="/formulario" className="nav__links text-reset ">
+                        <NavLink
+                           to="/"
+                           className="nav__links text-reset"
+                           onClick={() => setShowMobileMenu(!showMobileMenu)}
+                        >
                            <div className="icono_link nav_items items-cta">
                               <FaBalanceScale />
                               Formulario
                            </div>
-                        </a>
+                        </NavLink>
                      </div>
                   </MenuItem>
                   <MenuItem>

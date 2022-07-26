@@ -1,10 +1,10 @@
 import imgLogoFooter from "../../assets/cest_superior_izquierdo.png";
-
+import imgLogo_1 from "../../assets/logo_cest_home.png";
 export const Footer = () => {
    return (
       <div className="container">
          <div className="grupo-1 container_grid_footer_mb ">
-            <div className="flex_grap">
+            <div className="flex_grap ">
                {/* LOGO */}
                <a
                   href="#"
