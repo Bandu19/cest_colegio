@@ -44,7 +44,7 @@ export const Navbar = () => {
                         >
                            <div className="icono_link nav_items items-cta">
                               <FaBalanceScale />
-                              Formulario
+                              Formularios
                            </div>
                         </NavLink>
                      </div>
