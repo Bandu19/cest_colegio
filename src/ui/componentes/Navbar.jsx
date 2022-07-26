@@ -38,7 +38,7 @@ export const Navbar = () => {
                   <MenuItem>
                      <div className="content_width ">
                         <NavLink
-                           to="/"
+                           to="/formulario"
                            className="nav__links text-reset"
                            onClick={() => setShowMobileMenu(!showMobileMenu)}
                         >
